@@ -1,0 +1,24 @@
+function isPrime(var i) begin
+    var j;
+    j := 2;
+    while j < i do 
+        if (i % j) == 0 then
+            return 0
+        end;
+        j := j + 1
+    end;
+    return 1
+end;
+
+function main() begin
+    var a;
+    read a;
+    var i;
+    i := 2;
+    while i <= a do
+        if call isPrime(i) then
+            write i
+        end;
+        i := i + 1
+    end
+end

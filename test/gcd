@@ -1,0 +1,18 @@
+var a;
+var b;
+
+function gcd(var a, var b) begin
+    if b == 0 then
+        return a
+    else
+        return call gcd(b, a % b)
+    end
+end;
+
+function main() begin
+    var c;
+    read a;
+    read b;
+    c := call gcd(a, b);
+    write c
+end
